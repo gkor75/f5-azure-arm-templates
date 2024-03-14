@@ -1,18 +1,12 @@
 {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json",
     "contentVersion": "10.3.0.0",
     "parameters": {
         "adminUsername": {
             "value": "azureuser"
         },
         "authenticationType": {
-            "value": "password"
-        },
-        "adminPasswordOrKey": {
-            "value": ""
-        },
-        "dnsLabel": {
-            "value": ""
+            "value": "sshPublicKey"
         },
         "instanceType": {
             "value": "Standard_D2s_v4"
@@ -20,38 +14,20 @@
         "imageName": {
             "value": "AllTwoBootLocations"
         },
-        "bigIqAddress": {
-            "value": ""
-        },
-        "bigIqUsername": {
-            "value": ""
-        },
-        "bigIqPassword": {
-            "value": ""
-        },
-        "bigIqLicensePoolName": {
-            "value": ""
-        },
-        "bigIqLicenseSkuKeyword1": {
-            "value": "OPTIONAL"
-        },
-        "bigIqLicenseUnitOfMeasure": {
-            "value": "OPTIONAL"
-        },
         "bigIpVersion": {
-            "value": "16.1.303000"
+            "value": "16.1.402000"
         },
         "bigIpModules": {
             "value": "asm:nominal"
         },
         "vnetName": {
-            "value": ""
+            "value": "demoNet"
         },
         "vnetResourceGroupName": {
-            "value": ""
+            "value": "demoNet"
         },
         "mgmtSubnetName": {
-            "value": ""
+            "value": "mgmt"
         },
         "declarationUrl": {
             "value": "NOT_SPECIFIED"
@@ -69,7 +45,7 @@
             "value": "OPTIONAL"
         },
         "restrictedSrcAddress": {
-            "value": ""
+            "value": "0.0.0.0/0"
         },
         "tagValues": {
             "value": {
@@ -81,16 +57,16 @@
             }
         },
         "allowUsageAnalytics": {
-            "value": "Yes"
+            "value": "No"
         },
         "allowPhoneHome": {
-            "value": "Yes"
+            "value": "No"
         },
         "vmScaleSetMinCount": {
-            "value": 2
+            "value": 1
         },
         "vmScaleSetMaxCount": {
-            "value": 4
+            "value": 2
         },
         "appInsights": {
             "value": "CREATE_NEW"
@@ -129,7 +105,7 @@
             "value": "http-https"
         },
         "applicationAddress": {
-            "value": ""
+            "value": "1.2.3.4"
         },
         "applicationPort": {
             "value": "80"
@@ -152,38 +128,14 @@
         "customPolicy": {
             "value": "NOT_SPECIFIED"
         },
-        "dnsMemberIpType": {
-            "value": "private"
-        },
-        "dnsMemberPort": {
-            "value": "80"
-        },
-        "dnsProviderHost": {
-            "value": ""
-        },
-        "dnsProviderPort": {
-            "value": "443"
-        },
-        "dnsProviderUser": {
-            "value": ""
-        },
-        "dnsProviderPassword": {
-            "value": ""
-        },
-        "dnsProviderPool": {
-            "value": "autoscale_pool"
-        },
-        "dnsProviderDataCenter": {
-            "value": "azure_datacenter"
-        },
         "tenantId": {
-            "value": ""
+            "value": "044ccb7c-90dd-4ee7-ab5b-589415695736"
         },
         "clientId": {
-            "value": ""
+            "value": "1463262f-99c8-4a10-a392-9b30c6d83160"
         },
         "servicePrincipalSecret": {
-            "value": ""
+            "value": "hon8Q~09TiM_a0tLTSw6RipGY.JuDWyxDgnHZca3"
         }
     }
 }

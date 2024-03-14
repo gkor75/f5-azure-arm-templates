@@ -4,3 +4,4 @@ Thumbs.db
 *.pyc
 venv/
 *.log
+supported/autoscale/waf/minimal/pub-key
