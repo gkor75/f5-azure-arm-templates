@@ -7,7 +7,7 @@ az group create -n bigIP -l polandcentral
 
 az deployment group create --verbose --no-wait  --resource-group bigIP \
   --name bigIP --template-file azuredeploy.json --parameters=@azuredeploy.parameters.json \
-  --parameters adminPasswordOrKey=@pub-key  
+  --parameters adminPasswordOrKey='BardzoTajne#1'
 
 
 

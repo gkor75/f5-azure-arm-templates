@@ -6,7 +6,7 @@
             "value": "azureuser"
         },
         "authenticationType": {
-            "value": "sshPublicKey"
+            "value": "password"
         },
         "instanceType": {
             "value": "Standard_D2s_v4"
